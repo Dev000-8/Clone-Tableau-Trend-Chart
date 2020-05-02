@@ -1,0 +1,936 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="76fac2fa-0f0e-4f42-a5f5-75ed090cde10" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/mr/api/endpoints/v1/default.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mr/api/endpoints/v1/expenses.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mr/api/endpoints/v1/feesProjection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mr/api/endpoints/v1/kpi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mr/api/endpoints/v1/opportunity.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mr/api/endpoints/v1/people.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mr/api/endpoints/v1/projectedFinancialPerformance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mr/api/endpoints/v1/projectedcashflow.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mr/api/endpoints/v1/summary.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mr/api/endpoints/v1/workGenerated.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mr/api/endpoints/v1/yearlyfinancialYTD.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mr/core/models/dimkeyperformanceindicator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mr/core/models/dimopportunity.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mr/core/models/factemployeeforecast.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mr/core/models/factemployeeutilisation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mr/core/models/factexecutivesummary.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mr/core/models/factgeneralledgerDistributions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mr/core/models/factkeyperformanceindicatorresults.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mr/core/models/factopportunityhours.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mr/core/models/factworkgenerated.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/Api/ApiDefault.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/Api/ApiProjectedFinancialPerformance.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/Api/ApiYearlyFinancialYTD.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/CashFlow/BottomChart/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/CashFlow/BottomChart/style.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/CashFlow/MiddleChart/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/CashFlow/MiddleChart/style.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/ExecutiveSummary/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/ProjectedFinancialPerformance/BottomChart/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/ProjectedFinancialPerformance/BottomChart/style.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/ProjectedFinancialPerformance/TopChart/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/ProjectedFinancialPerformance/TopChart/style.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/YearlyFinancialPerformance/BottomChart/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/YearlyFinancialPerformance/BottomChart/style.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/YearlyFinancialPerformance/TopChart/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/YearlyFinancialPerformance/TopChart/style.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/Reducers/Default.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/Reducers/ProjectedFinancialPerformance.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/Reducers/YearlyFinancialYTD.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/Sagas/DefaultSaga.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/Sagas/ProjectedFinancialPerformanceSaga.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/Sagas/YearlyFinancialYTDSaga.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mr/api/endpoints/v1/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mr/api/endpoints/v1/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mr/api/endpoints/v1/debtors.py" beforeDir="false" afterPath="$PROJECT_DIR$/mr/api/endpoints/v1/debtors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mr/api/endpoints/v1/fees.py" beforeDir="false" afterPath="$PROJECT_DIR$/mr/api/endpoints/v1/fees.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mr/api/modelsmap.py" beforeDir="false" afterPath="$PROJECT_DIR$/mr/api/modelsmap.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mr/core/alias.py" beforeDir="false" afterPath="$PROJECT_DIR$/mr/core/alias.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mr/core/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mr/core/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mr/core/models/dimdate.py" beforeDir="false" afterPath="$PROJECT_DIR$/mr/core/models/dimdate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mr/core/models/dimemployee.py" beforeDir="false" afterPath="$PROJECT_DIR$/mr/core/models/dimemployee.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mr/core/models/dimorganisation.py" beforeDir="false" afterPath="$PROJECT_DIR$/mr/core/models/dimorganisation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mr/core/models/factaccountsreceivableinvoice.py" beforeDir="false" afterPath="$PROJECT_DIR$/mr/core/models/factaccountsreceivableinvoice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mr/core/models/factprojectfees.py" beforeDir="false" afterPath="$PROJECT_DIR$/mr/core/models/factprojectfees.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Api/ApiDebtors.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Api/ApiDebtors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Api/ApiFees.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Api/ApiFees.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Assets/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Assets/js/constant.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Assets/js/constant.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Modules/Chart/BalanceSheet/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/BalanceSheet/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Modules/Chart/CashFlow/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/CashFlow/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Modules/Chart/CashFlow/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/CashFlow/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Modules/Chart/Debtors/AgeingChart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/Debtors/AgeingChart/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Modules/Chart/Debtors/DebtorsDaysChart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/Debtors/DebtorsDaysChart/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Modules/Chart/Debtors/ItemsChart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/Debtors/ItemsChart/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Modules/Chart/Debtors/ProjectChart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/Debtors/ProjectChart/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Modules/Chart/Debtors/ProjectChart/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/Debtors/ProjectChart/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Modules/Chart/Debtors/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/Debtors/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Modules/Chart/Debtors/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/Debtors/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Modules/Chart/ExecutiveSummary/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/ExecutiveSummary/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Modules/Chart/ExecutiveSummary/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/ExecutiveSummary/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Modules/Chart/Expenses/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/Expenses/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Modules/Chart/Expenses/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/Expenses/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Modules/Chart/FeeProjection/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/FeeProjection/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Modules/Chart/Fees/BottomChart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/Fees/BottomChart/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Modules/Chart/Fees/MiddleChart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/Fees/MiddleChart/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Modules/Chart/Fees/TopChart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/Fees/TopChart/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Modules/Chart/Fees/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/Fees/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Modules/Chart/FinancialPerformanceYTD/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/FinancialPerformanceYTD/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Modules/Chart/KPI/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/KPI/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Modules/Chart/Opportunities/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/Opportunities/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Modules/Chart/People/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/People/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Modules/Chart/ProjectPerformance/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/ProjectPerformance/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Modules/Chart/ProjectPerformance/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/ProjectPerformance/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Modules/Chart/ProjectedCashFlow/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/ProjectedCashFlow/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Modules/Chart/ProjectedFinancialPerformance/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/ProjectedFinancialPerformance/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Modules/Chart/WorkGenerated/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/WorkGenerated/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Modules/Chart/WorkInHand/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/WorkInHand/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Modules/Chart/YearlyFinancialPerformance/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/YearlyFinancialPerformance/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Modules/Chart/YearlyFinancialPerformance/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/YearlyFinancialPerformance/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Modules/Chart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Modules/Chart/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Modules/Chart/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Routes/Chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Routes/Chart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Sagas/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Sagas/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Utils/Functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/Utils/Functions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/index.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../frontend/src/Modules/Chart/FinancialPerformanceYTD/BottomChart/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27591">
+              <caret line="1623" column="51" selection-start-line="1623" selection-start-column="51" selection-end-line="1623" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mr/api/endpoints/v1/financialYTD.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1734">
+              <caret line="112" column="62" selection-start-line="112" selection-start-column="52" selection-end-line="112" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mr/core/models/dimdate.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="731">
+              <caret line="51" column="99" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="99" />
+              <folding>
+                <element signature="e#33#64#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mr/api/endpoints/v1/yearlyfinancialYTD.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2397">
+              <caret line="152" column="13" selection-start-line="152" selection-start-column="13" selection-end-line="152" selection-end-column="13" />
+              <folding>
+                <element signature="e#33#71#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+              <folding>
+                <element signature="e#33#64#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mr/core/alias.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
+              <folding>
+                <element signature="e#33#71#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mr/api/endpoints/v1/projectedcashflow.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1887">
+              <caret line="121" column="59" selection-start-line="121" selection-start-column="59" selection-end-line="121" selection-end-column="59" />
+              <folding>
+                <element signature="e#33#71#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mr/api/endpoints/v1/expenses.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1428">
+              <caret line="94" column="28" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mr/api/endpoints/v1/cashflow.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2023">
+              <caret line="129" column="32" selection-start-line="129" selection-start-column="32" selection-end-line="129" selection-end-column="32" />
+              <folding>
+                <element signature="e#33#71#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mr/core/models/factaccountsreceivableinvoice.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="48" column="86" selection-start-line="48" selection-start-column="86" selection-end-line="48" selection-end-column="86" />
+              <folding>
+                <element signature="e#33#64#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>get_loader</find>
+      <find>outer</find>
+      <find>Safety</find>
+      <find>order</find>
+      <find>DK</find>
+      <find>console</find>
+      <find>print</find>
+      <find>desc</find>
+      <find>FactProjectFees</find>
+      <find>projectperformance</find>
+      <find>DimProjectSubTypeKey</find>
+      <find>ProjectSubTypeKey</find>
+      <find>ProjectSourceTwoKey</find>
+      <find>bit</find>
+      <find>BIT</find>
+      <find>order_by</find>
+      <find>DimProjectKey</find>
+      <find>DE</find>
+      <find>factemployeeutilisation</find>
+      <find>GLD</find>
+      <find>DimChartOfAccountsKey</find>
+      <find>print(</find>
+      <find>min</find>
+      <find>right</find>
+      <find>_Director</find>
+      <find>left</find>
+      <find>DimEmployee</find>
+      <find>DimEmployeeDirectorKey</find>
+      <find>FactExecutiveSummary</find>
+      <find>format</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/mr/core/models/factgeneralledgercashflow.py" />
+        <option value="$PROJECT_DIR$/mr/core/models/factexecutivesummary.py" />
+        <option value="$PROJECT_DIR$/../../../x_human_detection/tensorflow-human-detection.py" />
+        <option value="$PROJECT_DIR$/../../../x_hair_coloring/pytorch-hair-segmentation-master/evaluate.py" />
+        <option value="$PROJECT_DIR$/../../../x_hair_coloring/pytorch-hair-segmentation-master/utils/trainer_verbose.py" />
+        <option value="$PROJECT_DIR$/../../../x_hair_coloring/pytorch-hair-segmentation-master/utils/metrics.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/mr/api/endpoints/v1/default.py" />
+        <option value="$PROJECT_DIR$/mr/api/endpoints/v1/summary.py" />
+        <option value="$PROJECT_DIR$/mr/api/endpoints/v1/expenses.py" />
+        <option value="$PROJECT_DIR$/mr/api/endpoints/v1/workinhand.py" />
+        <option value="$PROJECT_DIR$/mr/api/endpoints/v1/yearfinancialYTD.py" />
+        <option value="$PROJECT_DIR$/mr/api/endpoints/v1/projectperformance.py" />
+        <option value="$PROJECT_DIR$/mr/api/endpoints/v1/projectedFinancialPerformance.py" />
+        <option value="$PROJECT_DIR$/mr/core/models/factworkgenerated.py" />
+        <option value="$PROJECT_DIR$/mr/core/models/factemployeeforecast.py" />
+        <option value="$PROJECT_DIR$/mr/core/models/factemployeeutilisation.py" />
+        <option value="$PROJECT_DIR$/mr/core/models/factgeneralledgerDistributions.py" />
+        <option value="$PROJECT_DIR$/mr/api/endpoints/v1/projectedcashflow.py" />
+        <option value="$PROJECT_DIR$/mr/core/models/factkeyperformanceindicatorresults.py" />
+        <option value="$PROJECT_DIR$/mr/core/models/dimkeyperformanceindicator.py" />
+        <option value="$PROJECT_DIR$/mr/api/endpoints/v1/kpi.py" />
+        <option value="$PROJECT_DIR$/mr/core/models/factaccountsreceivableinvoice.py" />
+        <option value="$PROJECT_DIR$/mr/core/models/dimorganisation.py" />
+        <option value="$PROJECT_DIR$/mr/api/endpoints/v1/cashflow.py" />
+        <option value="$PROJECT_DIR$/mr/api/endpoints/v1/workGenerated.py" />
+        <option value="$PROJECT_DIR$/mr/core/models/dimopportunity.py" />
+        <option value="$PROJECT_DIR$/mr/core/models/factopportunityhours.py" />
+        <option value="$PROJECT_DIR$/mr/core/alias.py" />
+        <option value="$PROJECT_DIR$/mr/core/models/__init__.py" />
+        <option value="$PROJECT_DIR$/mr/api/endpoints/v1/__init__.py" />
+        <option value="$PROJECT_DIR$/mr/api/endpoints/v1/opportunity.py" />
+        <option value="$PROJECT_DIR$/mr/api/endpoints/v1/people.py" />
+        <option value="$PROJECT_DIR$/mr/core/models/dimemployee.py" />
+        <option value="$PROJECT_DIR$/mr/api/modelsmap.py" />
+        <option value="$PROJECT_DIR$/mr/api/endpoints/v1/debtors.py" />
+        <option value="$PROJECT_DIR$/mr/api/endpoints/v1/fees.py" />
+        <option value="$PROJECT_DIR$/mr/api/endpoints/v1/feesProjection.py" />
+        <option value="$PROJECT_DIR$/mr/api/endpoints/v1/financialYTD.py" />
+        <option value="$PROJECT_DIR$/mr/core/models/dimdate.py" />
+        <option value="$PROJECT_DIR$/mr/api/endpoints/v1/yearlyfinancialYTD.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Course" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/venv/Scripts/python.exe" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="backend" sdk-home="F:\Freelancer_task\projects\25.d3js\Unreal_Report_Site\backend\venv\Scripts\python.exe">
+        <option name="mySdkHome" value="F:\Freelancer_task\projects\25.d3js\Unreal_Report_Site\backend\venv\Scripts\python.exe" />
+        <option name="myModuleName" value="backend" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Freelancer_task\projects\x_d3js\Unreal_Report_Site\backend\mr\api\endpoints\v1" />
+      <recent name="F:\Freelancer_task\projects\x_d3js\Unreal_Report_Site\backend\mr\core\models" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="evaluate" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="backend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../x_hair_coloring/pytorch-hair-segmentation-master" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../x_hair_coloring/pytorch-hair-segmentation-master/evaluate.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="backend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../x_hair_coloring/pytorch-hair-segmentation-master" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../x_hair_coloring/pytorch-hair-segmentation-master/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="backend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="serialization" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="backend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/torch" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/torch/serialization.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="trainer_verbose" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="backend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../x_hair_coloring/pytorch-hair-segmentation-master/utils" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../x_hair_coloring/pytorch-hair-segmentation-master/utils/trainer_verbose.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.trainer_verbose" />
+        <item itemvalue="Python.evaluate" />
+        <item itemvalue="Python.serialization" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18598525" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49367756" weight="0.34279704" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49894625" weight="0.39957938" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49947312" weight="0.32912722" />
+      <window_info anchor="bottom" id="Educational.CheckDetails" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49736565" weight="0.32912722" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50632244" side_tool="true" visible="true" weight="0.34279704" />
+      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.49947312" weight="0.32912722" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25184405" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49841937" visible="true" weight="0.32912722" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49947312" weight="0.39957938" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49947312" weight="0.32912722" />
+      <window_info anchor="bottom" id="Educational.CheckDetails" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49736565" weight="0.32912722" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015806" side_tool="true" weight="0.32912722" />
+      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.49947312" weight="0.32912722" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/mr/core/models/factexecutivesummary.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../../x_hair_coloring/pytorch-hair-segmentation-master/main.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/mr/core/models/factgeneralledgerincomestatement.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/core/models/factprojectperformancesummary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-386" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/core/models/dimclient.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/core/models/dimchartofaccounts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/core/models/dimcompany.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/core/models/factworkgenerated.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+          <folding>
+            <element signature="e#33#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/core/models/factemployeeutilisation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="26" column="69" lean-forward="true" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
+          <folding>
+            <element signature="e#33#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/core/models/factfinancialmetric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/core/models/factemployeeforecast.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../frontend/src/Utils/Functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1343">
+          <caret line="79" column="37" selection-start-line="79" selection-start-column="37" selection-end-line="79" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/core/models/factgeneralledgerexpenses.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/api/endpoints/v1/balancesheet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1174">
+          <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/core/models/factgeneralledgercashflow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#33#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/core/models/factgeneralledgerDistributions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="21" column="56" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/core/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/api/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/core/models/factgeneralledgerbalancesheet.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/core/models/dimprojecttype.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/core/models/dimproject.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/core/models/dimprojectsubtype.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/core/models/factkeyperformanceindicatorresults.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/lodash/lodash.min.js" />
+    <entry file="file://$PROJECT_DIR$/mr/core/models/dimorganisation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+          <folding>
+            <element signature="e#33#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/core/models/dimkeyperformanceindicator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+          <folding>
+            <element signature="e#33#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/api/endpoints/v1/workGenerated.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="76" column="113" selection-start-line="76" selection-start-column="113" selection-end-line="76" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/api/endpoints/v1/kpi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="33" column="45" lean-forward="true" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+          <folding>
+            <element signature="e#33#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/core/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="42" lean-forward="true" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/api/endpoints/v1/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/core/models/dimopportunity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#33#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/api/endpoints/v1/opportunity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="156" column="36" selection-start-line="156" selection-start-column="36" selection-end-line="156" selection-end-column="36" />
+          <folding>
+            <element signature="e#33#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/api/endpoints/v1/people.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="83" column="26" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/core/models/factprojectfees.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/api/modelsmap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/core/models/dimemployee.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="38" column="40" lean-forward="true" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
+          <folding>
+            <element signature="e#33#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/core/models/factopportunityhours.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/api/endpoints/v1/feesProjection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="81" column="34" selection-start-line="81" selection-start-column="34" selection-end-line="81" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/api/endpoints/v1/debtors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+          <folding>
+            <element signature="e#33#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/api/endpoints/v1/summary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="76" column="25" lean-forward="true" selection-start-line="76" selection-start-column="25" selection-end-line="76" selection-end-column="25" />
+          <folding>
+            <element signature="e#33#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/api/endpoints/v1/fees.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="80" column="18" selection-start-line="80" selection-start-column="18" selection-end-line="80" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/api/endpoints/v1/projectedFinancialPerformance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1479">
+          <caret line="97" column="27" selection-start-line="97" selection-start-column="27" selection-end-line="97" selection-end-column="27" />
+          <folding>
+            <element signature="e#33#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/api/endpoints/v1/projectperformance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1836">
+          <caret line="118" column="26" selection-start-line="118" selection-start-column="26" selection-end-line="118" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../frontend/src/Modules/Chart/FinancialPerformanceYTD/BottomChart/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27591">
+          <caret line="1623" column="51" selection-start-line="1623" selection-start-column="51" selection-end-line="1623" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/api/endpoints/v1/financialYTD.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="112" column="62" selection-start-line="112" selection-start-column="52" selection-end-line="112" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/core/models/dimdate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="51" column="99" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="99" />
+          <folding>
+            <element signature="e#33#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/api/endpoints/v1/yearlyfinancialYTD.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2397">
+          <caret line="152" column="13" selection-start-line="152" selection-start-column="13" selection-end-line="152" selection-end-column="13" />
+          <folding>
+            <element signature="e#33#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/core/alias.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#33#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/api/endpoints/v1/projectedcashflow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1887">
+          <caret line="121" column="59" selection-start-line="121" selection-start-column="59" selection-end-line="121" selection-end-column="59" />
+          <folding>
+            <element signature="e#33#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/api/endpoints/v1/expenses.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="94" column="28" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/api/endpoints/v1/cashflow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2023">
+          <caret line="129" column="32" selection-start-line="129" selection-start-column="32" selection-end-line="129" selection-end-column="32" />
+          <folding>
+            <element signature="e#33#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/core/models/factaccountsreceivableinvoice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="48" column="86" selection-start-line="48" selection-start-column="86" selection-end-line="48" selection-end-column="86" />
+          <folding>
+            <element signature="e#33#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+          <folding>
+            <element signature="e#33#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
