@@ -1,3 +1,3 @@
 # Clone Tableau Trend Chart Using React JS
 
-![alt text](https://github.com/oliver90129/Clone-Tableau-Trend-Chart.git/image/3.png)
+![Trend Chart](https://github.com/oliver90129/Clone-Tableau-Trend-Chart.git/blob/master/image/3.png?raw=true)
